@@ -31,6 +31,6 @@ curl -X "POST" "https://api.github.com/repos/shaposhnikoff/arduino-wemos-esp8266
      -d $'{
   "title": "Alert '${PLATFORMIO_CI_SRC}'",
   "labels": ["bug"],
-  "body": "Job id is '${TRAVIS_JOB_ID}' \r\n Build was failed with ${result}. \r\n travis job id - '${TRAVIS_JOB_ID}' \r\n\n travis build web url \r\n '${TRAVIS_BUILD_WEB_URL}' \r\n\n  travis job web url \r\n '${TRAVIS_JOB_WEB_URL}' \r\n  raw log url  \r\n  '${RAW_LOG_URL}'"
+  "body": "Job id is '${TRAVIS_JOB_ID}' \r\n Build was failed with ${result}. \r\n travis job id - '${TRAVIS_JOB_ID}' \r\n\n travis build web url \r\n '${TRAVIS_BUILD_WEB_URL}' \r\n\n  travis job web url \r\n '${TRAVIS_JOB_WEB_URL}' \r\n\n  raw log url  \r\n  '${RAW_LOG_URL}'"
 }'
 
