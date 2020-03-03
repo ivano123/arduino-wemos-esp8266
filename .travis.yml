@@ -9,6 +9,24 @@ cache:
         - "~/.platformio"
 
 env:
+  global:
+    - COMMIT=${TRAVIS_COMMIT::8}
+    - NO_GCE_CHECK=true
+    - JAVA_HOME=/opt/ibm/java-x86_64-80
+    - PATH=$PATH:$TRAVIS_BUILD_DIR/apache-cassandra-3.11.4/bin:${JAVA_HOME}/bin:/home/travis/build/${TRAVIS_REPO_SLUG}/scripts:/home/travis/build/EA/mdmx-ci-scripts:.
+    #ibmsdk8 install fails unless we set PS1=">". See https://www-01.ibm.com/support/docview.wss?uid=swg21975406
+    - PS1=">"
+    #Space delimited emails of scrum team members to be notified about downstream builds. Downstream builds are builds triggered by an update in dependency"
+    - TEAM_EMAILS="mkhatibi@ca.ibm.com,mwang@ca.ibm.com"
+    - GIT_REPO_LC=$(echo $TRAVIS_REPO_SLUG | awk -F "/" '{print $2}' | tr '[:upper:]' '[:lower:]')
+    - TAG_TYPE=`if [ "$TRAVIS_BRANCH" == "master" ] && [ "${TRAVIS_PULL_REQUEST}" == "false" ]; then echo "latest"; else if [ "$TRAVIS_BRANCH" == "master" ] && [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then echo "pr"; else echo "$TRAVIS_BRANCH"; fi; fi;`
+    - TAG=$TAG_TYPE-$TRAVIS_BUILD_NUMBER
+    - TRAVISFVT=`if [ $(echo $TRAVIS_COMMIT_MESSAGE |  grep -ic travis-fvt) -gt 0 ] && [ $TRAVIS_BRANCH != "master" ];then echo yes; else echo no; fi`
+    - tenantName=$(echo ${TRAVIS_BRANCH} | tr -cd 'a-zA-Z0-9' )
+    - TENANT_NAME="${tenantName}${TRAVIS_BUILD_NUMBER}"
+    - CASSANDRA_HOST=portal582-55.bmix-dal-yp-fdeeb3f8-024b-4f9f-a039-36d6afd4830b.2174223486.composedb.com
+    - CASSANDRA_PORT=23006
+
     - PLATFORMIO_CI_SRC=esp8266/GSM_auto/GSM_auto.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
     - PLATFORMIO_CI_SRC=esp8266/FM_RADIO/TEA5767_eeprom_i2c_lcdNokia5110_digitalvolume_3m3.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
 
