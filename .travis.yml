@@ -13,12 +13,12 @@ env:
 
 
 
-before_install:
-    - echo "Script running before install"
-    - mkdir -p ~/.config/gh/
-    - pwd && ls -la
-    - cp -v -r .config/gh/config.yml ~/.config/gh/config.yml
-    - cd ~/.config/gh && ls -l 
+#before_install:
+#    - echo "Script running before install"
+#    - mkdir -p ~/.config/gh/
+#    - pwd && ls -la
+#    - cp -v -r .config/gh/config.yml ~/.config/gh/config.yml
+#    - cd ~/.config/gh && ls -l 
 
 
 install:
