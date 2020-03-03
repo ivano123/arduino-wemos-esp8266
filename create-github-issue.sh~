@@ -3,13 +3,20 @@
 
 #export TRAVIS_JOB_ID=10101010101
 #export TRAVIS_BUILD_WEB_URL="https://kjsdhfkjshdkfjshdfkjhs.com"
+#export TRAVIS_BUILD_WEB_URL="https://kjsdhfjkshdfkjshf.com"
+#export TRAVIS_JOB_WEB_URL="https://jksdhfksdhfjksdhfk.sfsfsdf.sdfsfsdfs.ru"
+
+export gh_token="8ff71c3b3852a37dd3be9f216e16bbcfcd2334ea"
+
 echo $TRAVIS_JOB_ID
 
 curl -X "POST" "https://api.github.com/repos/shaposhnikoff/arduino-wemos-esp8266/issues?state=all" \
      -H "Cookie: logged_in=no" \
      -H "Authorization: token $gh_token" \
      -H "Content-Type: text/plain; charset=utf-8" \
+     -H "Accept: application/vnd.github.v3.text+json" \
      -d $'{
-  "title": "A workflow alerts Operator who performs a process '${TRAVIS_JOB_ID}'",
-  "body": "'${TRAVIS_JOB_ID}' The command %s exited with ${result}.'${TRAVIS_JOB_ID}' travis build web url  '${TRAVIS_BUILD_WEB_URL}'  travis job web url  '${TRAVIS_JOB_WEB_URL}'"
+  "title": "Alert '${PLATFORMIO_CI_SRC}'",
+  "body": "Job id is '${TRAVIS_JOB_ID}' \r\n Build was failed with ${result}. \r\n travis job id - '${TRAVIS_JOB_ID}' \r\n\n travis build web url \r\n '${TRAVIS_BUILD_WEB_URL}' \r\n\n  travis job web url \r\n '${TRAVIS_JOB_WEB_URL}'"
 }'
+
