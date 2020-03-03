@@ -46,6 +46,7 @@ after_success:
 after_failure:
     - echo "FAILURE"
     - cd $TRAVIS_BUILD_DIR
+    - pwd
     - ./create-github-issue.sh
 #   - bash -c "env"
 after_script:
