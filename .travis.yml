@@ -67,11 +67,8 @@ after_success:
 after_failure:
     - echo "FAILURE"
     - cd $TRAVIS_BUILD_DIR
-   # - cat /home/travis/.travis/functions
-   # - pwd
-   # - ls -l
     - chmod 777 create-github-issue.sh
     - ./create-github-issue.sh
-   - bash -c "env"
+    - bash -c "env"
 after_script:
     - echo "SCRIPT WAS ENDED"
