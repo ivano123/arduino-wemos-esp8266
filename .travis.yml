@@ -9,7 +9,54 @@ cache:
         - "~/.platformio"
 
 env:
-    - PLATFORMIO_CI_SRC=esp8266/ESP8266_Web_Server_Arduino_IDE.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/GSM_auto/GSM_auto.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/FM_RADIO/TEA5767_eeprom_i2c_lcdNokia5110_digitalvolume_3m3.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/FM_RADIO/TEA5767_eeprom_i2c_lcdNokia5110_digitalvolume_3m2.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/FM_RADIO/TEA5767_eeprom_i2c_lcd1602_1m1a/TEA5767_eeprom_i2c_lcd1602_1m1a.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/FM_RADIO/1/TEA5767_eeprom_i2c_lcdNokia5110_digitalvolume_3m2/TEA5767_eeprom_i2c_lcdNokia5110_digitalvolume_3m2.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/FM_RADIO/TEA5767_eeprom_i2c_lcdNokia5110_3m1a.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/FM_RADIO/2/FM_Radio_TEA5767_und_Nokia_5110_LCD_Buttons/FM_Radio_TEA5767_und_Nokia_5110_LCD_Buttons.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/Infrared/sketch_jun19b/sketch_jun19b.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/Infrared/sketch_jun19c/sketch_jun19c.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/Infrared/webremote/webremote.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/Infrared/IRsendRawDemo/IRsendRawDemo.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/Infrared/sketch_jun19a/sketch_jun19a.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/Infrared/sketch_sep25a/sketch_sep25a.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/Infrared/ir_control_servo/ir_control_servo.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ESP8266-LED-Matrix-Clock.git/MatrixClock/MatrixClock.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ESP_WUNDER/esp-wunderground/esp-wunderground.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/7_segment_brute/7_segment_brute.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/GSM_TERM_2relay/GSM_TERM_2relay.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/DS18B20__ESP8266_web_server_old/DS18B20__ESP8266_web_server.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/7sgmtsuhu/7sgmtsuhu.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ESP8266_DHT_weather_station/ESP8266_DHT_weather_station.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ESP8266_DHT_weather_station/weather_station_bmp280_ledmatrix.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ESP12E_Si7021/ESP12E_Si7021.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/DHTtester1/DHTtester.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/DHTtester/DHTtester.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/GSM_auto_3/GSM_auto_3.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ESP8266_Morse_Code/ESP8266_Morse_Code.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ILI9340/sketch_feb04b/sketch_feb04b.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ILI9340/svetodiodnaya-matritsa-na-max7219-baze-max72xxpanel-sozdaem-beg/svetodiodnaya-matritsa-na-max7219-baze-max72xxpanel-sozdaem-beg.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ILI9340/real_web_server/real_web_server.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ILI9340/temperature_wifi_time/temperature_wifi_time.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ILI9340/temperature_and_rtc/temperature_and_rtc.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ILI9340/oscilograf/oscilograf.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ILI9340/webserver/webserver.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ILI9340/sketch_feb04a/sketch_feb04a.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ILI9340/arduino-tft-rtc-i2c-digital-clock-ds3231-with-temperature-diy/arduino-tft-rtc-i2c-digital-clock-ds3231-with-temperature-diy.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ILI9340/digital_clock_ant_temp/digital_clock_ant_temp.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ILI9340/temperature_wifi_time.default/temperature_wifi_time/temperature_wifi_time.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ILI9340/GPS_GLCD_uBlox_BIG/GPS_GLCD_uBlox_BIG.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ILI9340/clock/NTPAnalogClock/NTPAnalogClock.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/cloud_aws/SimpleExample_aws_mqtt/SimpleExample_aws_mqtt.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/cloud_aws/aws-mqtt-websocket-example-paho/aws-mqtt-websocket-example-paho.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/cloud_aws/aws-mqtt-websocket-example-pubsubclient/aws-mqtt-websocket-example-pubsubclient.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/cloud_aws/esp8266_iot_with_certs/mqtt_x509_DER/mqtt_x509_DER.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/cloud_aws/DHT-publish/DHT-publish.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/DS18B20__ESP8266_web_server/DS18B20__ESP8266_web_server.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/ESP8266_Web_Server_Arduino_IDE/ESP8266_Web_Server_Arduino_IDE.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
+    - PLATFORMIO_CI_SRC=esp8266/gsm_mayak_sms/gsm_mayak_sms.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
 
 
 

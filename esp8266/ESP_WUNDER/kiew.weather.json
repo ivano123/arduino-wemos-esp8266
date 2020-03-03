@@ -1,0 +1,94 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "conditions": 1
+  }
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Kiev, Ukraine",
+		"city":"Kiev",
+		"state":"30",
+		"state_name":"Ukraine",
+		"country":"UR",
+		"country_iso3166":"UA",
+		"zip":"00000",
+		"magic":"25",
+		"wmo":"33345",
+		"latitude":"50.45000076",
+		"longitude":"30.50000000",
+		"elevation":"156.1"
+		},
+		"observation_location": {
+		"full":"Kyiv, ",
+		"city":"Kyiv",
+		"state":"",
+		"country":"UA",
+		"country_iso3166":"UA",
+		"latitude":"50.40000153",
+		"longitude":"30.45000076",
+		"elevation":"551 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"UKKK",
+		"observation_time":"Last Updated on February 24, 11:00 PM EET",
+		"observation_time_rfc822":"Sat, 24 Feb 2018 23:00:00 +0200",
+		"observation_epoch":"1519506000",
+		"local_time_rfc822":"Sat, 24 Feb 2018 23:34:07 +0200",
+		"local_epoch":"1519508047",
+		"local_tz_short":"EET",
+		"local_tz_long":"Europe/Kiev",
+		"local_tz_offset":"+0200",
+		"weather":"Clear",
+		"temperature_string":"12 F (-11 C)",
+		"temp_f":12,
+		"temp_c":-11,
+		"relative_humidity":"73%",
+		"wind_string":"From the ENE at 13 MPH",
+		"wind_dir":"ENE",
+		"wind_degrees":70,
+		"wind_mph":13,
+		"wind_gust_mph":0,
+		"wind_kph":22,
+		"wind_gust_kph":0,
+		"pressure_mb":"1020",
+		"pressure_in":"30.12",
+		"pressure_trend":"0",
+		"dewpoint_string":"5 F (-15 C)",
+		"dewpoint_f":5,
+		"dewpoint_c":-15,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"-3 F (-19 C)",
+		"windchill_f":"-3",
+		"windchill_c":"-19",
+		"feelslike_string":"-3 F (-19 C)",
+		"feelslike_f":"-3",
+		"feelslike_c":"-19",
+		"visibility_mi":"N/A",
+		"visibility_km":"N/A",
+		"solarradiation":"--",
+		"UV":"-1","precip_1hr_string":"-9999.00 in (-9999.00 mm)",
+		"precip_1hr_in":"-9999.00",
+		"precip_1hr_metric":"--",
+		"precip_today_string":"0.00 in (0.0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0.0",
+		"icon":"clear",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_clear.gif",
+		"forecast_url":"http://www.wunderground.com/global/stations/33345.html",
+		"history_url":"http://www.wunderground.com/history/airport/UKKK/2018/2/24/DailyHistory.html",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=50.40000153,30.45000076",
+		"nowcast":""
+	}
+}

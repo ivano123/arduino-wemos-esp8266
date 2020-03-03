@@ -11,8 +11,8 @@
 MDNSResponder mdns;
 
 // Replace with your network credentials
-const char* ssid = "";
-const char* password = "";
+const char* ssid = "MikroTik-191AD3";
+const char* password = "zebra222";
 
 
 ESP8266WebServer server(80);
