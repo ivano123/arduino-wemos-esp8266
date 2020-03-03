@@ -17,7 +17,7 @@ const char* password = "";
 
 ESP8266WebServer server(80);
 
-__String webPage = "";
+String webPage = "";
 
 int gpio0_pin = 0;
 int gpio2_pin = 2;
