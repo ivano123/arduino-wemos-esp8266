@@ -1,0 +1,3 @@
+Usage: platformio ci [OPTIONS] [SRC]...
+
+Error: Invalid value: Found invalid path: ./json-server/json-server.ino

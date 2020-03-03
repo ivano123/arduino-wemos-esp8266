@@ -46,7 +46,7 @@ install:
     - git checkout -qf $TRAVIS_COMMIT
     - pip install -U platformio
     - platformio lib -g install "JsonStreamingParser" "ESP8266_SSD1306" "WifiManager@>=0.15.0-beta" "simpleDSTadjust" "Adafruit Unified Sensor" "DHT sensor library" "SRAM" "PubSubClient" "AWS-SDK-ESP" "WebSockets" "Paho"
-    - platformio lib --storage-dir libraries/ install
+#    - platformio lib --storage-dir libraries/ install
     - platformio lib update
     - wget https://github.com/cli/cli/releases/download/v0.5.7/gh_0.5.7_linux_amd64.tar.gz && tar -xzvf gh_0.5.7_linux_amd64.tar.gz
     - cp -v gh_0.5.7_linux_amd64/bin/gh ~/

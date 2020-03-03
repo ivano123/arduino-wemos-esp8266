@@ -1,0 +1,3 @@
+Usage: platformio ci [OPTIONS] [SRC]...
+
+Error: Invalid value: Missing argument 'src'
