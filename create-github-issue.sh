@@ -1,6 +1,8 @@
 #!/bin/bash -x
 
 
+echo $TRAVIS_JOB_ID
+
 curl -X "POST" "https://api.github.com/repos/shaposhnikoff/arduino-wemos-esp8266/issues?state=all" \
      -H "Cookie: logged_in=no" \
      -H "Authorization: token $gh_token" \
