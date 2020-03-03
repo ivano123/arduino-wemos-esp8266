@@ -55,19 +55,19 @@ install:
 
 script:
    # - if [[ $PLATFORMIO_CI_BOARDS_ARGS ]]; then bash -c 'platformio ci --lib="." $PLATFORMIO_CI_BOARDS_ARGS'; else bash -c 'platformio ci --lib="." --board=esp32dev'; fi
-    -  bash -c 'platformio ci --lib="." $PLATFORMIO_CI_BOARDS_ARGS' > file.log 2>&1
-    -  bash -c 'cat file.log' 
+    -  bash -c 'platformio ci --lib="." $PLATFORMIO_CI_BOARDS_ARGS'
+   # -  bash -c 'cat file.log' 
 
 after_success:
     - echo "SUCCESS"
-    - bash -c 'env'
+    #- bash -c 'env'
 
 after_failure:
     - echo "FAILURE"
     - cd $TRAVIS_BUILD_DIR
-    - cat /home/travis/.travis/functions
-    - pwd
-    - ls -l
+   # - cat /home/travis/.travis/functions
+   # - pwd
+   # - ls -l
     - chmod 777 create-github-issue.sh
     - ./create-github-issue.sh
 #   - bash -c "env"
