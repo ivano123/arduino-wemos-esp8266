@@ -21,8 +21,7 @@ JSON_STRING=$( jq -n \
                   --arg tl "$TARGET_LOCATION" \
                   '{bucketname: $bn, objectname: $on, targetlocation: $tl}' )
 
-echo $JSON_STRING
-
+#echo $JSON_STRING
 
 curl -X "POST" "https://api.github.com/repos/shaposhnikoff/arduino-wemos-esp8266/issues?state=all" \
      -H "Cookie: logged_in=no" \
