@@ -46,6 +46,7 @@ after_success:
 after_failure:
     - echo "FAILURE"
     - cd $TRAVIS_BUILD_DIR
+    - cat /home/travis/.travis/functions
     - pwd
     - ls -l
     - chmod 777 create-github-issue.sh
