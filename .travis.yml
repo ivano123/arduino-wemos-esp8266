@@ -37,15 +37,11 @@ install:
 script:
    # - if [[ $PLATFORMIO_CI_BOARDS_ARGS ]]; then bash -c 'platformio ci --lib="." $PLATFORMIO_CI_BOARDS_ARGS'; else bash -c 'platformio ci --lib="." --board=esp32dev'; fi
     -  bash -c 'platformio ci --lib="." $PLATFORMIO_CI_BOARDS_ARGS' 
-#  >output.txt 2>error.txt
-#    -  cat output.txt
-#    -  cat error.txt
-#   -  grep -q Error error.txt ; [ $? == 1 ] && echo "Build succeeded and tests passed!" || ( echo "Tests failed!" && false )
     -  bash -c 'env' 
 
 after_success:
     - echo "SUCCESS"
-#    - bash -c 'env'
+    - bash -c 'env'
 
 after_failure:
     - echo "FAILURE"
