@@ -46,7 +46,7 @@ after_success:
 after_failure:
     - echo "FAILURE"
     - cd ~/ardiuno-vemos/
-    - /home/travis/gh issue create --title "Issue title" --body "Issue body"
+    - ./create-github-issue.sh
 #   - bash -c "env"
 after_script:
     - echo "SCRIPT WAS ENDED"
