@@ -45,7 +45,7 @@ after_success:
 
 after_failure:
     - echo "FAILURE"
-    - cd ~/ardiuno-vemos/
+    - cd $TRAVIS_BUILD_DIR
     - ./create-github-issue.sh
 #   - bash -c "env"
 after_script:
