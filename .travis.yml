@@ -26,6 +26,7 @@ env:
     - TENANT_NAME="${tenantName}${TRAVIS_BUILD_NUMBER}"
     - CASSANDRA_HOST=portal582-55.bmix-dal-yp-fdeeb3f8-024b-4f9f-a039-36d6afd4830b.2174223486.composedb.com
     - CASSANDRA_PORT=23006
+    - RAW_LOG_URL=https://api.travis-ci.com/v3/job/${TRAVIS_JOB_ID}/log.txt
 
     - PLATFORMIO_CI_SRC=esp8266/GSM_auto/GSM_auto.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
     - PLATFORMIO_CI_SRC=esp8266/FM_RADIO/TEA5767_eeprom_i2c_lcdNokia5110_digitalvolume_3m3.ino PLATFORMIO_CI_BOARDS_ARGS=--board=d1
