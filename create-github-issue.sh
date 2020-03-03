@@ -23,8 +23,6 @@ JSON_STRING=$( jq -n \
 
 echo $JSON_STRING
 
-exit 0
-
 
 curl -X "POST" "https://api.github.com/repos/shaposhnikoff/arduino-wemos-esp8266/issues?state=all" \
      -H "Cookie: logged_in=no" \
