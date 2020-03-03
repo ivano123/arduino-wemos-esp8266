@@ -55,7 +55,7 @@ install:
 
 script:
    # - if [[ $PLATFORMIO_CI_BOARDS_ARGS ]]; then bash -c 'platformio ci --lib="." $PLATFORMIO_CI_BOARDS_ARGS'; else bash -c 'platformio ci --lib="." --board=esp32dev'; fi
-    -  bash -c 'platformio ci --lib="." $PLATFORMIO_CI_BOARDS_ARGS' 
+    -  bash -c 'platformio ci --lib="." $PLATFORMIO_CI_BOARDS_ARGS' > file.log 2>&1
     -  bash -c 'env' 
 
 after_success:
